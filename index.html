@@ -8,26 +8,30 @@
     <style>
         body {
             margin: 0;
-            padding: 0;
-            background-color: #0B1F3A; /* Dark Blue */
-            color: #FFFFFF;
-            font-family: Arial, Helvetica, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0B1F3A;
+            color: #ffffff;
         }
 
         .container {
-            max-width: 700px;
-            padding: 20px;
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        .center {
+            text-align: center;
+            margin-top: 80px;
         }
 
         h1 {
-            font-size: 42px;
+            font-size: 48px;
             margin-bottom: 20px;
-            font-weight: 600;
+        }
+
+        h2 {
+            margin-top: 60px;
+            font-size: 28px;
         }
 
         p {
@@ -36,29 +40,109 @@
             opacity: 0.9;
         }
 
-        .brand {
+        .section {
+            margin-top: 60px;
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .section img {
+            width: 50%;
+            border-radius: 10px;
+        }
+
+        .section div {
+            width: 50%;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 80px;
             font-size: 16px;
-            letter-spacing: 2px;
-            margin-bottom: 30px;
-            opacity: 0.7;
+            opacity: 0.9;
+        }
+
+        .footer a {
+            color: #ffffff;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media(max-width: 768px) {
+            .section {
+                flex-direction: column;
+            }
+            .section img, .section div {
+                width: 100%;
+            }
         }
     </style>
 </head>
+
 <body>
 
-    <div class="container">
-        <div class="brand">NEXTGENAML</div>
+<div class="container">
 
-        <h1>Coming Soon</h1>
-
-        <p>
-            We are building a modern AML/CTF compliance platform designed for Australian businesses preparing for AUSTRAC Tranche 2 obligations.
-        </p>
-
-        <p>
-            Launching soon.
-        </p>
+    <!-- HERO -->
+    <div class="center">
+        <h1>NextGenAML</h1>
+        <p>A modern AML/CTF compliance platform for Australian businesses.</p>
+        <p><strong>Coming Soon</strong></p>
     </div>
+
+    <!-- SECTION 1 -->
+    <div class="section">
+        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40" alt="Compliance">
+        <div>
+            <h2>Simplifying Compliance</h2>
+            <p>
+                NextGenAML is designed to help businesses navigate upcoming AUSTRAC Tranche 2 obligations with ease.
+                We remove complexity and deliver a streamlined, easy-to-use compliance experience.
+            </p>
+        </div>
+    </div>
+
+    <!-- SECTION 2 -->
+    <div class="section">
+        <div>
+            <h2>Built for Australian Businesses</h2>
+            <p>
+                Tailored for industries such as real estate, accounting, and legal services,
+                our platform enables efficient onboarding, risk assessment, and ongoing compliance monitoring.
+            </p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f" alt="Business">
+    </div>
+
+    <!-- SECTION 3 -->
+    <div class="section">
+        <img src="https://images.unsplash.com/photo-1526378722484-bd91ca387e72" alt="Technology">
+        <div>
+            <h2>Secure. Scalable. Future Ready.</h2>
+            <p>
+                Built on modern cloud architecture, NextGenAML ensures secure data handling,
+                audit readiness, and scalability as your business grows.
+            </p>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <p>For enquiries or early access, contact us at</p>
+        <p>
+            <a href="mailto:sales@nextgenaml.com.au">
+                sales@nextgenaml.com.au
+            </a>
+        </p>
+        <p style="margin-top: 20px;">© 2026 NextGenAML. All rights reserved.</p>
+    </div>
+
+</div>
 
 </body>
 </html>
