@@ -2,185 +2,111 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>NextGenAML | Coming Soon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NextGenAML - Launching Soon</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
-    * { box-sizing: border-box; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
 
     body {
-      margin: 0;
-      font-family: "Segoe UI", Arial, sans-serif;
-      background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 50%, #93c5fd 100%);
-      color: #0b1f3a;
-      min-height: 100vh;
-    }
-
-    .page {
-      min-height: 100vh;
+      height: 100vh;
       display: flex;
-      flex-direction: column;
-    }
-
-    header {
-      padding: 28px 8%;
-      display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #0f5132, #198754);
+      color: white;
+      text-align: center;
     }
 
-    .logo {
-      font-size: 22px;
-      font-weight: 700;
+    .container {
+      max-width: 700px;
+      padding: 40px;
     }
 
-    .pill {
-      border: 1px solid rgba(11,31,58,0.2);
-      border-radius: 999px;
-      padding: 8px 16px;
-      font-size: 14px;
-      color: #1e3a8a;
-      background: rgba(255,255,255,0.4);
-    }
-
-    main {
-      flex: 1;
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 50px;
-      align-items: center;
-      padding: 40px 8% 70px;
-    }
-
-    .launch-badge {
+    .badge {
       display: inline-block;
-      background: linear-gradient(135deg, #2563eb, #3b82f6);
-      color: #ffffff;
-      padding: 14px 28px;
-      border-radius: 999px;
-      font-size: 20px;
-      font-weight: 700;
-      margin-bottom: 30px;
-      box-shadow: 0 0 20px rgba(37,99,235,0.4);
+      background: rgba(255,255,255,0.15);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 14px;
+      margin-bottom: 20px;
     }
 
     h1 {
-      font-size: clamp(42px, 6vw, 72px);
-      margin: 0 0 22px;
-      line-height: 1.05;
+      font-size: 52px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      letter-spacing: -1px;
     }
 
-    .highlight {
-      color: #1d4ed8;
-    }
-
-    .subtitle {
-      font-size: 20px;
-      color: #1e3a8a;
-      margin-bottom: 34px;
-      max-width: 650px;
-      line-height: 1.7;
-    }
-
-    .actions {
-      display: flex;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-
-    .button {
-      background: #1d4ed8;
-      color: #ffffff;
-      padding: 14px 22px;
-      border-radius: 12px;
-      text-decoration: none;
-      font-weight: 700;
+    p {
+      font-size: 18px;
+      opacity: 0.9;
+      line-height: 1.6;
+      margin-bottom: 30px;
     }
 
     .email {
-      color: #1d4ed8;
+      font-size: 16px;
+      background: rgba(255,255,255,0.15);
+      padding: 12px 20px;
+      border-radius: 8px;
+      display: inline-block;
+    }
+
+    .email a {
+      color: #d1ffe0;
       text-decoration: none;
       font-weight: 600;
     }
 
-    .email:hover { text-decoration: underline; }
-
-    .card {
-      background: rgba(255,255,255,0.6);
-      border: 1px solid rgba(0,0,0,0.05);
-      border-radius: 28px;
-      padding: 30px;
-      box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+    .footer {
+      margin-top: 40px;
+      font-size: 13px;
+      opacity: 0.6;
     }
 
-    .card img {
-      width: 100%;
-      border-radius: 20px;
-      margin-bottom: 20px;
-    }
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 36px;
+      }
 
-    .card h2 {
-      margin: 0 0 12px;
-      color: #0b1f3a;
-    }
-
-    footer {
-      padding: 20px 8%;
-      font-size: 14px;
-      display: flex;
-      justify-content: space-between;
-      border-top: 1px solid rgba(0,0,0,0.1);
-      color: #1e3a8a;
-    }
-
-    @media(max-width:900px){
-      main { grid-template-columns:1fr; }
+      p {
+        font-size: 16px;
+      }
     }
   </style>
 </head>
 
 <body>
-<div class="page">
+  <div class="container">
+    
+    <div class="badge">Launching Soon</div>
 
-<header>
-  <div class="logo">NextGenAML</div>
-  <div class="pill">AML/CTF Platform</div>
-</header>
+    <h1>NextGenAML</h1>
 
-<main>
+    <p>
+      Modern AML compliance platform built for Australia.<br>
+      Designed for simplicity, scalability, and regulatory readiness.
+    </p>
 
-<section>
-  <div class="launch-badge">Launching Soon</div>
+    <div class="email">
+      Questions? Contact us at 
+      <a href="mailto:sales@nextgenaml.com.au">sales@nextgenaml.com.au</a>
+    </div>
 
-  <h1>
-    Modern AML compliance<br>
-    <span class="highlight">built for Australia</span>
-  </h1>
+    <div class="footer">
+      © 2026 NextGenAML. All rights reserved.
+    </div>
 
-  <p class="subtitle">
-    NextGenAML is building a simple, secure and cost-effective AML/CTF compliance platform
-    for businesses preparing for AUSTRAC Tranche 2 obligations.
-  </p>
-
-  <div class="actions">
-    <a class="button" href="mailto:sales@nextgenaml.com.au">Contact Us</a>
-    <a class="email" href="mailto:sales@nextgenaml.com.au">sales@nextgenaml.com.au</a>
   </div>
-</section>
-
-<aside class="card">
-  <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=900&q=80">
-  <h2>Built for simplicity, trust and scale</h2>
-  <p>Designed for real estate, accounting and legal industries with automated compliance workflows.</p>
-</aside>
-
-</main>
-
-<footer>
-  <div>© 2026 NextGenAML</div>
-  <div>sales@nextgenaml.com.au</div>
-</footer>
-
-</div>
 </body>
 </html>
