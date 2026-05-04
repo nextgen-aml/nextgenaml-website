@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Orbitron:wght@800&family=Alexandria:wght@400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-navy-950: #081026;
+  --color-navy-900: #0D1B40;
+  --color-emerald-400: #10B981;
+  --color-emerald-500: #059669;
+  --color-emerald-600: #047857;
+  --color-emerald-700: #03543F;
+  --color-slate-50: #F8FAFC;
+  --color-slate-100: #F1F5F9;
+  --color-slate-600: #475569;
+  
+  --radius-xl: 12px;
+  --radius-2xl: 16px;
+  --radius-3xl: 24px;
+}
+
+@layer base {
+  body {
+    @apply font-sans antialiased text-navy-900 bg-white;
+  }
+}
+
+@layer utilities {
+  .grid-pattern {
+    background-image: radial-gradient(#0D1B40 0.5px, transparent 0.5px);
+    background-size: 24px 24px;
+  }
+  
+  .glass-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(13, 27, 64, 0.1);
+  }
+}
