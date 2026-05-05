@@ -31,7 +31,7 @@ export default function OperatingPhilosophy() {
             >
               <div className="h-px w-8 bg-slate-200"></div>
               <p className="text-sm md:text-base font-bold text-slate-500 uppercase tracking-[0.2em]">
-                The NextGenAML operating philosophy
+                The NextGen AML operating philosophy
               </p>
               <div className="h-px w-8 bg-slate-200"></div>
             </motion.div>

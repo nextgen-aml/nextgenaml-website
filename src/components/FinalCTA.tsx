@@ -20,7 +20,7 @@ export default function FinalCTA() {
               compliance becomes urgent.
             </h2>
             <p className="text-base md:text-lg text-slate-400 leading-relaxed max-w-3xl mx-auto">
-              The businesses that prepare early will have cleaner workflows, trained teams, better records, and stronger confidence the day Tranche 2 obligations begin. NextGenAML helps you get there with a platform and support model built for modern Australian SMEs.
+              The businesses that prepare early will have cleaner workflows, trained teams, better records, and stronger confidence the day Tranche 2 obligations begin. NextGen AML helps you get there with a platform and support model built for modern Australian SMEs.
             </p>
           </motion.div>
 

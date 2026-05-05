@@ -97,7 +97,7 @@ export default function FeatureGrid() {
               AML Compliance lifecycle
             </h2>
             <p className="text-base text-slate-600 leading-relaxed max-w-2xl">
-              The NextGen AML platform is designed with vast experience in digital innovation where every Austrac obligation is fulfilled through the one operating environment.
+              The NextGen AML platform is designed with vast experience in digital innovation where every AUSTRAC obligation is fulfilled through the one operating environment.
             </p>
           </motion.div>
         </div>

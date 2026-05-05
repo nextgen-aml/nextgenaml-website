@@ -43,7 +43,7 @@ export default function Hero() {
         <div className="relative lg:absolute lg:right-0 lg:bottom-0 lg:w-[48%] xl:w-[50%] 2xl:w-[52%] z-10 pointer-events-none select-none overflow-hidden lg:overflow-visible flex justify-end items-end mt-8 lg:mt-0">
           <img 
             src={heroImage} 
-            alt="NextGenAML Dashboard" 
+            alt="NextGen AML Dashboard" 
             className="w-full h-auto object-contain object-right-bottom translate-y-4 lg:translate-x-10 lg:translate-y-0 transition-transform duration-700"
             referrerPolicy="no-referrer"
           />

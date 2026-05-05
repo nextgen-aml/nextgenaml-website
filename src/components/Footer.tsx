@@ -64,12 +64,12 @@ export default function Footer() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
             <div className="lg:col-span-8">
               <p className="text-[12px] leading-relaxed text-slate-400 max-w-4xl">
-                NextGenAML provides AML/CTF workflow technology and compliance support services. Information on this website is general in nature and should not be treated as legal advice. Businesses should obtain independent legal or regulatory advice for their specific obligations.
+                NextGen AML provides AML/CTF workflow technology and compliance support services. Information on this website is general in nature and should not be treated as legal advice. Businesses should obtain independent legal or regulatory advice for their specific obligations.
               </p>
             </div>
             <div className="lg:col-span-4 lg:text-right">
               <p className="text-[11px] font-bold text-slate-500 uppercase tracking-widest">
-                © 2026 NextGenAML
+                © 2026 NextGen AML
               </p>
             </div>
           </div>

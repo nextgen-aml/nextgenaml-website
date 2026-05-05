@@ -51,7 +51,7 @@ export default function WhyNextGen() {
               built for SMBs.
             </h2>
             <p className="text-lg text-slate-600 leading-relaxed max-w-2xl">
-              NextGenAML is a modern AML/CTF compliance organisation supported by a RegTech platform designed to embed compliance into daily operations without enterprise overhead.
+              NextGen AML is a modern AML/CTF compliance organisation supported by a RegTech platform designed to embed compliance into daily operations without enterprise overhead.
             </p>
           </motion.div>
         </div>

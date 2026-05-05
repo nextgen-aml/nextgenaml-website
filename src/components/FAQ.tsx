@@ -4,7 +4,7 @@ import { ChevronDown, HelpCircle } from 'lucide-react';
 
 const faqs = [
   {
-    question: "Does NextGenAML submit reports directly to AUSTRAC?",
+    question: "Does NextGen AML submit reports directly to AUSTRAC?",
     answer: "The platform generates the report and sends it to your assigned compliance officer for review. The Compliance Officer can submit after he conducts his due diligence preserving the human control in the loop. Submission status, date, and reference are captured inside the case record for audit continuity."
   },
   {
@@ -12,11 +12,11 @@ const faqs = [
     answer: "Yes. Businesses that provide AUSTRAC defined designated services must incorporate AML/CTF Controls. These include and are not limited to Real Estate Agents and Agencies, Lawyers and Conveyancers and Accounting Practitioners. AUSTRAC has mandated that all new regulated entities should be ready to meet compliance guidelines by the 1st July, 2026. All businesses must comply, regardless of size."
   },
   {
-    question: "Is NextGenAML suitable for real estate agencies?",
+    question: "Is NextGen AML suitable for real estate agencies?",
     answer: "Yes, NextGen AML is purpose built for the Real Estate agents and agencies. Our workflows are designed around entity checks, beneficial ownership, risk scoring, document collection and verification. We also are aware of specific industry requirements that might require multiple buyer profiles and checks."
   },
   {
-    question: "Can NextGenAML support accounting firms?",
+    question: "Can NextGen AML support accounting firms?",
     answer: "Yes. The platform supports Accounting Firms and Accountants with client onboarding, KYB, entity verification, beneficial owner capture, risk assessments, PEP screening and audit ready record keeping. It is aligned with requirements of the industry and is calibrated to the engagement requirements of your business."
   },
 ];

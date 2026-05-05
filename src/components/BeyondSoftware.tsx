@@ -36,7 +36,7 @@ export default function BeyondSoftware() {
               not just a platform login.
             </h2>
             <p className="text-base text-slate-600 leading-relaxed max-w-2xl">
-              Tools alone do not produce compliant outcomes. NextGenAML pairs the platform with hands-on advisory services so your team adopts the right workflows, asks the right questions, and stays prepared for audit and regulatory scrutiny.
+              Tools alone do not produce compliant outcomes. NextGen AML pairs the platform with hands-on advisory services so your team adopts the right workflows, asks the right questions, and stays prepared for audit and regulatory scrutiny.
             </p>
           </motion.div>
         </div>
