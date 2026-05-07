@@ -1,10 +1,18 @@
+import { useEffect } from 'react';
 import { motion } from 'motion/react';
 import { Lock, CheckCircle2 } from 'lucide-react';
 
-const inputClasses = "w-full rounded-lg bg-white border border-navy-900/10 px-4 py-3 text-sm text-navy-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-emerald-500/20 focus:border-emerald-500 transition-all";
-const labelClasses = "block text-[11px] font-bold text-navy-900/60 uppercase tracking-widest mb-1.5 ml-1";
+const HUBSPOT_SCRIPT_SRC = 'https://js-na2.hsforms.net/forms/embed/246111230.js';
 
 export default function LeadCapture() {
+  useEffect(() => {
+    if (document.querySelector(`script[src="${HUBSPOT_SCRIPT_SRC}"]`)) return;
+    const script = document.createElement('script');
+    script.src = HUBSPOT_SCRIPT_SRC;
+    script.defer = true;
+    document.body.appendChild(script);
+  }, []);
+
   return (
     <section className="bg-[#0A1128] py-12 sm:py-16 relative overflow-hidden" id="contact">
       <div className="absolute inset-0 bg-gradient-to-b from-[#1A1F3A] to-[#0A1128] pointer-events-none" />
@@ -24,14 +32,13 @@ export default function LeadCapture() {
         </div>
 
         <div className="max-w-2xl mx-auto">
-          {/* Main Card - Book a Demo */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="bg-white rounded-[24px] p-6 md:p-8 shadow-xl border border-slate-100 flex flex-col"
           >
-            <div className="mb-10 text-center">
+            <div className="mb-8 text-center">
               <h4 className="text-2xl font-black text-navy-900 mb-3 tracking-tight">
                 Get in Touch
               </h4>
@@ -40,41 +47,12 @@ export default function LeadCapture() {
               </p>
             </div>
 
-            <form className="space-y-5 flex-grow" onSubmit={(e) => e.preventDefault()}>
-              <div className="grid sm:grid-cols-2 gap-5">
-                <div>
-                  <label className={labelClasses}>Full Name*</label>
-                  <input type="text" placeholder="Full Name" className={inputClasses} required />
-                </div>
-                <div>
-                  <label className={labelClasses}>Business Name</label>
-                  <input type="text" placeholder="Business Name" className={inputClasses} />
-                </div>
-              </div>
-
-              <div className="grid sm:grid-cols-2 gap-5">
-                <div>
-                  <label className={labelClasses}>Email Address*</label>
-                  <input type="email" placeholder="Email address" className={inputClasses} required />
-                </div>
-                <div>
-                  <label className={labelClasses}>Phone Number*</label>
-                  <input type="tel" placeholder="Phone Number" className={inputClasses} required />
-                </div>
-              </div>
-
-              <div>
-                <label className={labelClasses}>Message</label>
-                <textarea 
-                  placeholder="How can we help your business with compliance?" 
-                  className={`${inputClasses} h-32 resize-none`}
-                />
-              </div>
-
-              <button className="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-4 rounded-xl shadow-lg shadow-emerald-500/20 transition-all transform hover:scale-[1.02] active:scale-[0.98]">
-                Contact Us
-              </button>
-            </form>
+            <div
+              className="hs-form-frame min-h-[200px]"
+              data-region="na2"
+              data-form-id="4a68f8bf-abb4-4632-b9bc-85a1a8ac308d"
+              data-portal-id="246111230"
+            />
           </motion.div>
         </div>
 

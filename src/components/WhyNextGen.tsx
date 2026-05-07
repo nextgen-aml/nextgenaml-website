@@ -64,7 +64,7 @@ export default function WhyNextGen() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
-              className="glass-card p-10 rounded-3xl relative group overflow-hidden"
+              className="group p-10 rounded-3xl relative overflow-hidden bg-white border border-slate-100 hover:border-emerald-500/30 hover:shadow-xl transition-all"
             >
               <div className="absolute top-0 right-0 p-8">
                 <span className="text-6xl font-black text-slate-100 group-hover:text-emerald-500/10 transition-colors">
@@ -73,8 +73,8 @@ export default function WhyNextGen() {
               </div>
               
               <div className="relative z-10 space-y-6">
-                <div className="w-14 h-14 rounded-2xl bg-navy-950 text-white flex items-center justify-center shadow-lg group-hover:bg-emerald-500 transition-colors">
-                  <pillar.icon className="w-7 h-7" />
+                <div className="inline-flex p-3 rounded-xl bg-emerald-50 text-emerald-600 group-hover:bg-emerald-500 group-hover:text-white transition-all duration-300">
+                  <pillar.icon className="w-6 h-6 stroke-[2.5px]" />
                 </div>
                 
                 <div className="space-y-3">
