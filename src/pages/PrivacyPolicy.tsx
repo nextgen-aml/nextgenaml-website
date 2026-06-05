@@ -107,7 +107,7 @@ export default function PrivacyPolicy() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
           
           {/* Sidebar (Left, Sticky) */}
-          <aside className="lg:col-span-4 sticky top-24 space-y-6 max-h-[85vh] overflow-y-auto pr-2">
+          <aside className="lg:col-span-4 lg:sticky lg:top-24 space-y-6 lg:max-h-[85vh] lg:overflow-y-auto pr-2">
             <div className="pb-2 border-b border-slate-100">
               <h3 className="text-xs font-bold text-slate-400 uppercase tracking-widest">
                 Table of Contents
