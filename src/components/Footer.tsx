@@ -73,7 +73,7 @@ export default function Footer() {
                 © 2026 NextGenAML
               </p>
               <Link 
-                to="/privacy" 
+                to="/privacy-policy"
                 className="text-[11px] font-bold text-slate-400 hover:text-emerald-500 transition-colors uppercase tracking-widest focus:outline-none focus:underline"
               >
                 Privacy Policy

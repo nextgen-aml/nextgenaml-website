@@ -24,7 +24,7 @@ export default function App() {
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/privacy" element={<PrivacyPolicy />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             {/* Fallback to home */}
             <Route path="*" element={<Home />} />
           </Routes>
