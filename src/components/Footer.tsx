@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Logo from './Logo';
 
 export default function Footer() {
@@ -64,13 +65,19 @@ export default function Footer() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end">
             <div className="lg:col-span-8">
               <p className="text-[12px] leading-relaxed text-slate-400 max-w-4xl">
-                NextGen AML provides AML/CTF workflow technology and compliance support services. Information on this website is general in nature and should not be treated as legal advice. Businesses should obtain independent legal or regulatory advice for their specific obligations.
+                NextGenAML provides AML/CTF workflow technology and compliance support services. Information on this website is general in nature and should not be treated as legal advice. Businesses should obtain independent legal or regulatory advice for their specific obligations.
               </p>
             </div>
-            <div className="lg:col-span-4 lg:text-right">
+            <div className="lg:col-span-4 flex flex-col sm:flex-row lg:flex-col items-start sm:items-center lg:items-end justify-start lg:justify-end gap-3 sm:gap-6 lg:gap-2">
               <p className="text-[11px] font-bold text-slate-500 uppercase tracking-widest">
-                © 2026 NextGen AML
+                © 2026 NextGenAML
               </p>
+              <Link 
+                to="/privacy" 
+                className="text-[11px] font-bold text-slate-400 hover:text-emerald-500 transition-colors uppercase tracking-widest focus:outline-none focus:underline"
+              >
+                Privacy Policy
+              </Link>
             </div>
           </div>
         </div>
